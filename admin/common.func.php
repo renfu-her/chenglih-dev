@@ -43,9 +43,9 @@ $Day = date("Y-m-d");//今天日期
 
 /* MySQL設定 */
 define('DB_NAME','chenglih');
-define('DB_USER','chenglih-db');
-define('DB_PASSWD','bgDi9zfo5P5GeBjE');
-define('DB_HOST','139.162.5.79');
+define('DB_USER','chenglih');
+define('DB_PASSWD','U4pu4cbn9CTZxPC1Y6nY');
+define('DB_HOST','127.0.0.1');
 define('DB_TYPE','mysql');
 
 try {
