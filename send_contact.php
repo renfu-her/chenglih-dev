@@ -22,8 +22,6 @@ $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($se
 $response = file_get_contents($url);
 $responseKeys = json_decode($response, true);
 
-var_dump($responseKeys);
-exit;
 
 if ($responseKeys["success"]) { // success//google我不是機器人
 
@@ -48,6 +46,9 @@ if ($responseKeys["success"]) { // success//google我不是機器人
 
 	$send_email = $rows["send_email"]; //收件者
 
+
+	var_dump($send_email);
+	exit;
 
 	//新增
 	$sql = "insert into mail (
