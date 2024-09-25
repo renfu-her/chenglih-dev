@@ -5,8 +5,7 @@ if (!isset($_SESSION)) {
 
 
 echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
-var_dump('123');
-exit;
+
 include "admin/common.func.php";
 $contact_name 		=	$_POST["contact_name"];
 $contact_email 		=	$_POST["contact_email"];
@@ -22,6 +21,9 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
 $response = file_get_contents($url);
 $responseKeys = json_decode($response, true);
+
+var_dump($responseKeys);
+exit;
 
 if ($responseKeys["success"]) { // success//google我不是機器人
 
