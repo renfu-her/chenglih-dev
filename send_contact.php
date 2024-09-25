@@ -2,7 +2,11 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
+
+
 echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+var_dump('123');
+exit;
 include "admin/common.func.php";
 $contact_name 		=	$_POST["contact_name"];
 $contact_email 		=	$_POST["contact_email"];
@@ -78,8 +82,6 @@ if ($responseKeys["success"]) { // success//google我不是機器人
 
 	$db = null; // 關閉連線
 
-	var_dump($send_email);
-	exit;
 
 
 	//Mail
