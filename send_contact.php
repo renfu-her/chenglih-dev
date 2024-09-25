@@ -78,6 +78,8 @@ if ($responseKeys["success"]) { // success//google我不是機器人
 
 	$db = null; // 關閉連線
 
+	var_dump($send_email);
+	exit;
 
 
 	//Mail
