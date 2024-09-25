@@ -47,9 +47,6 @@ if ($responseKeys["success"]) { // success//google我不是機器人
 	$send_email = $rows["send_email"]; //收件者
 
 
-	var_dump($send_email);
-	exit;
-
 	//新增
 	$sql = "insert into mail (
 `name` ,
@@ -82,6 +79,8 @@ if ($responseKeys["success"]) { // success//google我不是機器人
 
 	$result->execute();
 
+	var_dump($result);
+	exit;
 
 	$db = null; // 關閉連線
 
