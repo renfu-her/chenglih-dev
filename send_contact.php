@@ -79,9 +79,6 @@ if ($responseKeys["success"]) { // success//google我不是機器人
 
 	$result->execute();
 
-	var_dump($result);
-	exit;
-
 	$db = null; // 關閉連線
 
 
